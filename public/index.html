@@ -28,45 +28,45 @@
 
                     <div class="form-group">
                         <label for="nombre">Nombre del Servidor</label>
-                        <input type="text" id="nombre" name="nombre" placeholder="Servidor XYZ">
+                        <input type="text" id="nombre" name="nombre" placeholder="Ubuntu Server 20.04" required>
                     </div>
 
                     <div class="form-group">
                         <label for="cpu">CPU</label>
                         <select id="cpu" name="cpu">
-                            <option value="">Seleccionar CPU...</option>
-                            <!-- CPUs con mínimo 2 cores -->
-                            <option value="Intel Core i3 - 100€">Intel Core i3 (2 cores) - 100€</option>
-                            <option value="Intel Core i5 - 180€">Intel Core i5 (4 cores) - 180€</option>
-                            <option value="AMD Ryzen 3 - 130€">AMD Ryzen 3 (4 cores) - 130€</option>
-                            <option value="AMD Ryzen 5 - 190">AMD Ryzen 5 (6 cores) - 190€</option>
-                            <option value="Intel Core i7 - 320">Intel Core i7 (4 cores) - 320€</option>
+                            <option value="" disabled selected>Seleccionar CPU...</option>
+                            <option value="Intel Core i5 - 180€">Intel Core i5 (6 cores) - 180€</option>
+                            <option value="Intel Core i7 - 250€">Intel Core i7 (8 cores) - 250€</option>
+                            <option value="AMD Ryzen 5 - 220€">AMD Ryzen 5 (6 cores) - 220€</option>
+                            <option value="AMD Ryzen 7 - 290€">AMD Ryzen 7 (8 cores) - 290€</option>
+                            <option value="Intel Core i9 - 400€">Intel Core i9 (10 cores) - 400€</option>
                         </select>
                     </div>
                     
                     <div class="form-group">
                         <label for="ram">RAM</label>
                         <select id="ram" name="ram">
-                            <option value="">Seleccionar RAM...</option>
-                            <option value="8GB DDR4 - 80">8GB DDR4 - 80€</option>
-                            <option value="16GB DDR4 - 100">16GB DDR4 - 100</option>
-                            <option value="32GB DDR4 - 150€">32GB DDR4 - 150€</option>
-                            <option value="64GB DDR4 - 290€">64GB DDR4 - 290€</option>
+                            <option value="" disabled selected>Seleccionar RAM...</option>
+                            <option value="8GB DDR4 - 80€">8GB DDR4 - 80€</option>
+                            <option value="16GB DDR4 - 120€">16GB DDR4 - 120€</option>
+                            <option value="32GB DDR4 - 220€">32GB DDR4 - 220€</option>
+                            <option value="64GB DDR4 - 400€">64GB DDR4 - 400€</option>
                         </select>
                     </div>
                     
                     <div class="form-group">
                         <label for="Almacenamiento">Almacenamiento</label>
-                        <select id="Almacenamiento" name="Almacenamiento">
-                            <option value="">Seleccionar Almacenamiento...</option>
-                            <option value="SSD 250GB - 40€">SSD 250GB - 40€</option>
-                            <option value="SSD 500GB - 80€">SSD 500GB - 80€</option>
-                            <option value="SSD 1TB - 120€">SSD 1TB - 120€</option>
-                            <option value="HDD 1TB - 35€">HDD 1TB - 35€</option>
-                            <option value="HDD 2TB - 60€">HDD 2TB - 60€</option>
-                            <option value="HDD 4TB - 100€">HDD 4TB - 100€</option>
+                        <select id="Almacenamiento" name="Almacenamiento" required>
+                            <option value="" disabled selected>Seleccionar Almacenamiento...</option>
+                            <option value="SSD 250GB - 50€">SSD 250GB - 50€</option>
+                            <option value="SSD 500GB - 100€">SSD 500GB - 100€</option>
+                            <option value="SSD 1TB - 160€">SSD 1TB - 160€</option>
+                            <option value="HDD 1TB - 45€">HDD 1TB - 45€</option>
+                            <option value="HDD 2TB - 80€">HDD 2TB - 80€</option>
+                            <option value="HDD 4TB - 130€">HDD 4TB - 130€</option>
                         </select>
                     </div>
+                    
 
                     <button type="button" onclick="guardar()" class="btn btn-primary">Añadir servidor</button>
                 </fieldset>
