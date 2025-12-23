@@ -19,7 +19,6 @@ function anyadir() {
 
 async function borrar(id) {
     
-
     if (!confirm('¿Estás seguro de que quieres borrar el servidor con id ' + id + '?')) {
         return;
     }
