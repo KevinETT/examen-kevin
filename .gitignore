@@ -1,0 +1,23 @@
+# Archivos y carpetas de VS Code
+.vscode/
+
+# Node.js dependencies
+node_modules/
+
+# Archivos de log
+*.log
+
+# Archivos de configuración privada
+.env
+
+# Directorios de compilación
+dist/
+build/
+
+# Archivos del sistema operativo (macOS y Windows)
+.DS_Store
+Thumbs.db
+
+# Otros archivos que no deben ser versionados
+*.swp
+*.swo
