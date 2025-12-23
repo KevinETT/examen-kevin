@@ -22,12 +22,9 @@ async function borrar(id) {
     if (!confirm('¿Estás seguro de que quieres borrar el servidor con id ' + id + '?')) {
         return;
     }
-
     try {
         const response = await fetch(`${URL}/${id}`, { method: 'DELETE' });
-
         console.log(response.statusText);
-
         mostrarTabla();
     } catch (error) {
         console.error(error);
