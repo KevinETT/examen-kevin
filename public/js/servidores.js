@@ -85,7 +85,7 @@ async function recargarTabla() {
         <p><strong>CPU:</strong> ${servidor.cpu}</p>
         <p><strong>RAM:</strong> ${servidor.ram}</p>
          <p><strong>Almacenamiento:</strong> ${servidor.almacenamiento}</p>
-         <p><strong>Precio Total:</strong> ${servidor.precio + '€'}</p>
+         <p><strong>Precio Total:</strong> ${servidor.precio }€</p>
     `;
         container.appendChild(card);
     }
