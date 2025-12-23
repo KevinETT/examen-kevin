@@ -17,6 +17,24 @@ function anyadir() {
 
 }
 
+async function borrar(id) {
+    
+
+    if (!confirm('¿Estás seguro de que quieres borrar el servidor con id ' + id + '?')) {
+        return;
+    }
+
+    try {
+        const response = await fetch(`${URL}/${id}`, { method: 'DELETE' });
+
+        console.log(response.statusText);
+
+        mostrarTabla();
+    } catch (error) {
+        console.error(error);
+    }
+}
+
 async function guardar() {
     const cpuPrecio = parseInt(formulario.cpu.value.split('- ')[1] || 0);
     const ramPrecio = parseInt(formulario.ram.value.split('- ')[1] || 0);
@@ -86,6 +104,9 @@ async function recargarTabla() {
         <p><strong>RAM:</strong> ${servidor.ram}</p>
          <p><strong>Almacenamiento:</strong> ${servidor.almacenamiento}</p>
          <p><strong>Precio Total:</strong> ${servidor.precio }€</p>
+           <div class="actions">
+            <button class="btn btn-danger" type="button" onclick="borrar('${servidor.id}')">🗑️ Borrar</button>
+        </div>
     `;
         container.appendChild(card);
     }
